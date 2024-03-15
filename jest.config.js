@@ -1,16 +1,10 @@
 // jest.config.js
-/*module.exports = {
-  //rootDir: './',
-  //testEnvironment: 'node',
-  moduleNameMapper: {
-    '^(\\.{1,2}/.*)\\.js$': '$1'
-  }
-};*/
-
-
 /** @type {import('jest').Config} */
 const config = {
   verbose: true,
+  testEnvironment: "node",
+  moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
+  moduleNameMapper: { "^@/(.*)$": "<rootDir>/src/$1" },
 };
 
 module.exports = config;
