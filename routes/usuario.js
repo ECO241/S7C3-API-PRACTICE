@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const Usuario = require('../models/usuario');
-const {usuarios, personajes, artefactos} = require('../database/db');
-const schemaUsuario = require('../schemas/usuario');
+const Usuario = require('../models/usuario.js');
+const {usuarios, personajes, artefactos} = require('../database/db.js');
+const schemaUsuario = require('../schemas/usuario.js');
 
 // obtener todos los usuarios
 router.get('/', (req, res) => {

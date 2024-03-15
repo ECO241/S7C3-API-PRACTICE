@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const z = require('zod');
 
-const Personaje = require('../models/personaje');
-const {usuarios, personajes, artefactos} = require('../database/db');
-const schemaPersonaje = require('../schemas/personaje');
+const Personaje = require('../models/personaje.js');
+const {usuarios, personajes, artefactos} = require('../database/db.js');
+const schemaPersonaje = require('../schemas/personaje.js');
 
 // obtener todos los usuarios
 router.get('/', (req, res) => {
