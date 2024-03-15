@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../index.js');
+const app = require('../index.js');
 
 describe('API /usuario', () => {
 
@@ -13,7 +13,9 @@ describe('API /usuario', () => {
       correo: 'johndoe@example.com',
     };
     // Send a POST request to /usuarios endpoint
-    const res = await request(app).post('/usuarios').send(usuario);
+    const res = await request(app)
+    .post('/usuarios')
+    .send(usuario);
     // Check the response
     expect(res.statusCode).toEqual(201);
     expect(res.body.id).toEqual(usuario.id);
@@ -21,7 +23,7 @@ describe('API /usuario', () => {
     expect(res.body.apellido).toEqual(usuario.apellido);
     expect(res.body.correo).toEqual(usuario.correo);
   });
-/*
+
   // Test case 2
   test('Debería retornar una lista de usuarios', async () => {
     // Send a GET request to /usuarios endpoint
@@ -52,5 +54,5 @@ describe('API /usuario', () => {
     const res = await request(app).delete(`/usuarios/${usuarioId}`);
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty('mensaje', 'Usuario fue eliminado con éxito');
-  });*/
+  });
 });

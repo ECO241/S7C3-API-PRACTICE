@@ -2,8 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // importar el modelo de usuario
-//const Usuario = require('../models/usuario.js');
-
+const Usuario = require('../models/usuario.js');
 // importar la base de datos
 const {usuarios, personajes, artefactos} = require('../database/db.js');
 const schemaUsuario = require('../schemas/usuario.js');
@@ -62,6 +61,6 @@ router.delete('/:id', (req, res) => {
       const index = usuarios.indexOf(usuario);
       usuarios.splice(index, 1);
       res.status(200).send({"mensaje": "Usuario fue eliminado con éxito"});
-    });
+});
 
 module.exports = router;
