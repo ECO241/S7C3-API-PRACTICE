@@ -26,12 +26,11 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>",
-      "/","./","./routes","./models","./schemas"
+      "<rootDir>"
+
     ],
     "modulePaths": [
-      "<rootDir>",
-      "/","./","./routes","./models","./schemas"
+      "<rootDir>"
     ],
     "moduleDirectories": [
       "node_modules",
