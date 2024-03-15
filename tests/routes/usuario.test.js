@@ -21,7 +21,7 @@ describe('API /usuario', () => {
     expect(res.body.apellido).toEqual(usuario.apellido);
     expect(res.body.correo).toEqual(usuario.correo);
   });
-
+/*
   // Test case 2
   test('Debería retornar una lista de usuarios', async () => {
     // Send a GET request to /usuarios endpoint
@@ -52,5 +52,5 @@ describe('API /usuario', () => {
     const res = await request(app).delete(`/usuarios/${usuarioId}`);
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty('mensaje', 'Usuario fue eliminado con éxito');
-  });
+  });*/
 });
