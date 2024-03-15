@@ -6,8 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "cross-env NODE_ENV=test jest",
-    "testb": "jest --passWithNoTests --forceExit --detectOpenHandles --maxWorkers=1",
+    "test": "cross-env NODE_ENV=test jest --passWithNoTests --forceExit --detectOpenHandles --maxWorkers=1",
     "coverage": "jest --coverage"
   },
   "keywords": [],
