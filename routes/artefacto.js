@@ -3,7 +3,7 @@ const router = express.Router();
 const z = require('zod');
 
 // importar el modelo de artefacto
-const Artefacto = require('..//models/artefacto.js');
+const Artefacto = require('../models/artefacto.js');
 const {usuarios, personajes, artefactos} = require('../database/db.js');
 const schemaArtefacto = require('../schemas/artefacto.js');
 
