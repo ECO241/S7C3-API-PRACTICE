@@ -26,11 +26,11 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>"
+      "<rootDir>","/"
 
     ],
     "modulePaths": [
-      "<rootDir>"
+      "<rootDir>","/"
     ],
     "moduleDirectories": [
       "node_modules",
