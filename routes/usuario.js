@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+// importar el modelo de usuario
 const Usuario = require('../models/usuario.js');
 const {usuarios, personajes, artefactos} = require('../database/db.js');
 const schemaUsuario = require('../schemas/usuario.js');
