@@ -2,7 +2,7 @@
 module.exports = {
   rootDir: './',
   testEnvironment: 'node',
-  "modulePaths": [
-    "<rootDir>"
-  ],
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1'
+  }
 };
