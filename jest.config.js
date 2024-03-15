@@ -1,7 +1,7 @@
 // jest.config.js
 module.exports = {
   rootDir: '/',
-  //testEnvironment: 'node',
+  testEnvironment: 'node',
   //testMatch: ['<rootDir>/tests/**/*.test.js'],
   //collectCoverage: true,
   //collectCoverageFrom: ['<rootDir>/routes/**/*.js'],
