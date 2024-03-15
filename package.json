@@ -25,20 +25,12 @@
     "supertest": "^6.3.4"
   },
   "jest": {
-    "roots": [
-      "<rootDir>"
-    ],
-    "testMatch": [
-      "**/tests/**/*.test.js"
-    ],
-    "modulePaths": [
-      "<rootDir>"
-    ],
     "moduleDirectories": [
       "node_modules",
       "/routes",
       "/models",
-      "/schemas"
+      "/schemas",
+      "/"
     ]
   }
 }
