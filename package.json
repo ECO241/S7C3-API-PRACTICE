@@ -27,9 +27,6 @@
   "jest": {
     "moduleDirectories": [
       "node_modules",
-      "/routes",
-      "/models",
-      "/schemas",
       "/"
     ]
   }
