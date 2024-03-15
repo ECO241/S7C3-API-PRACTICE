@@ -3,6 +3,8 @@ const router = express.Router();
 
 // importar el modelo de usuario
 //const Usuario = require('../models/usuario.js');
+
+// importar la base de datos
 const {usuarios, personajes, artefactos} = require('../database/db.js');
 const schemaUsuario = require('../schemas/usuario.js');
 
