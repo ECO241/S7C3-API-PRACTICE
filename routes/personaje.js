@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const z = require('zod');
 
-const Personaje = require('../models/Personaje');
+const Personaje = require('../models/personaje');
 const {usuarios, personajes, artefactos} = require('../database/db');
 const schemaPersonaje = require('../schemas/personaje');
 
