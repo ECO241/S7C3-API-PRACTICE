@@ -3,7 +3,7 @@ const router = express.Router();
 const z = require('zod');
 
 // importar el modelo de personaje
-const Personaje = require('../models/personaje');
+const Personaje = require('../models/personaje.js');
 const {usuarios, personajes, artefactos} = require('../database/db.js');
 const schemaPersonaje = require('../schemas/personaje.js');
 
