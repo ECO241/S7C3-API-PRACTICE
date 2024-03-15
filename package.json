@@ -26,11 +26,13 @@
   },
   "jest": {
     "roots": [
-      "<rootDir>","./"
-
+      "<rootDir>"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
     ],
     "modulePaths": [
-      "<rootDir>","./"
+      "<rootDir>"
     ],
     "moduleDirectories": [
       "node_modules",
