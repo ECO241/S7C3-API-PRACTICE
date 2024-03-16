@@ -2,10 +2,10 @@
   "name": "s7c3-parcial-i",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon src/server.js",
     "test": "cross-env NODE_ENV=test jest --passWithNoTests --forceExit --detectOpenHandles --maxWorkers=1",
     "coverage": "jest --coverage"
   },
